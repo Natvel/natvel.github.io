@@ -1,15 +1,31 @@
 <search>
-    
-     <entry>
-        <title>Blog</title>
+
+    <entry>
+        <title>Hugo搭建博客</title>
         <url>https://natvel.github.io/post/blog/</url>
         <categories>
-          
+
         </categories>
         <tags>
-          
+
         </tags>
-        <content type="html"> </content>
+        <content type="html"> 引子 很早之前就想有个自己的博客,也看到了一些非常不错的博客,决定把自己所见,所得记录下来。
+            Hexo 与 Hugo ​ 开始之前来说下为何选择Hugo,Hexo特点是主题丰富,运行稳定对于新手来说比较友好,而Hugo是使用Golang语言编写的,有着号称世间上最快的构建网站工具,当然Hugo目前在传播速度上不及Hexo,其相应的社区活跃度也远不及Hexo。
+            ​	对于这两种技术来说并没有胜负之分 如果你仍然对Hugo有非常浓厚的兴趣的话可以接着往下看。
+            安装部分   安装Hugo之前需要安装Git以及Golang
+            https://git-scm.com/download
+            https://golang.google.cn/dl/
+            Mac可用Homebrew下载 关于Homebrew这里不再赘述
+            brew install hugo # 检查版本 hugo version Hugo Static Site Generator v0.68.3/extended darwin/amd64 BuildDate: unknown - 生成目录
+            hugo new site myblog cd myblog/ 之后选择一个你喜欢的主题 Hugo 我这里的话选择了next主题 当然你也可以去themes.gohugo.io上查看
+            Hugo主题推荐 themes.gohugo.io  #git 下载地址并放到 themes下面 git clone https://github.com/xtfly/hugo-theme-next.git themes/next # 进入到content下 并创建一个新的md格式博客 cd content/ hugo new post/blog.md 写完md里面的内容 用本地方式进行查看
+            #这一步操作的时候需要注意在文件的根目录下进行草稿操作也就是在myblog下操作 否者会出现Module does not exist hugo server -t next --buildDrafts # 本地查看 http://localhost:1313/ 与Github结合  需要在Github上用名称.github.io形式创建一个项目  这里git是要github上进行公私钥匹配的 否者可能推送至github不成功 公私钥这个网上有很多 可以自己看看    之后就是Git一些常规操作了
+            #与你的网站建立连接 hugo --theme=next --baseUrl=&amp;quot;https://natvel.github.io&amp;quot; --buildDrafts #到public目录下 cd public git init git add . git commit -m &amp;quot;博客初始化&amp;quot; # 推送至github git remote add origin https://github.com/Natvel/natvel.github.io.git git push -u origin master 之后就点击配置的名称.github.io就可以了
+            后记 总的来说第一次写博客还是有不少的问题 欢迎大家来提出问题,积极讨论 这里分享一些个人认为不错的Hexo的博客供大家参考 大家也可以多看看
+            参考文档  https://www.jitwxs.cn/ https://bestzuo.cn/posts/blog-establish.html  其他资料   https://www.zhihu.com/question/24422335/answer/46357100
+            https://www.bilibili.com/video/BV1q4411i7gL?from=search&amp;amp;seid=9799170704000721207
+            https://www.bilibili.com/video/BV14b411K7Fm?from=search&amp;amp;seid=9799170704000721207
+        </content>
     </entry>
-    
+
 </search>

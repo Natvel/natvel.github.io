@@ -7,18 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 06 May 2020 21:28:18 +0800</lastBuildDate>
-    
-	<atom:link href="https://natvel.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+
+    <atom:link href="https://natvel.github.io/index.xml" rel="self" type="application/rss+xml" />
+
+
     <item>
-      <title>Blog</title>
+      <title>Hugo搭建博客</title>
       <link>https://natvel.github.io/post/blog/</link>
       <pubDate>Wed, 06 May 2020 21:28:18 +0800</pubDate>
-      
+
       <guid>https://natvel.github.io/post/blog/</guid>
-      <description></description>
+      <description>引子 很早之前就想有个自己的博客,也看到了一些非常不错的博客,决定把自己所见,所得记录下来。
+        Hexo 与 Hugo ​ 开始之前来说下为何选择Hugo,Hexo特点是主题丰富,运行稳定对于新手来说比较友好,而Hugo是使用Golang语言编写的,有着号称世间上最快的构建网站工具,当然Hugo目前在传播速度上不及Hexo,其相应的社区活跃度也远不及Hexo。
+        ​	对于这两种技术来说并没有胜负之分 如果你仍然对Hugo有非常浓厚的兴趣的话可以接着往下看。
+        安装部分   安装Hugo之前需要安装Git以及Golang
+        https://git-scm.com/download
+        https://golang.google.cn/dl/
+        Mac可用Homebrew下载 关于Homebrew这里不再赘述
+        brew install hugo # 检查版本 hugo version Hugo Static Site Generator v0.68.3/extended darwin/amd64 BuildDate: unknown - 生成目录
+        hugo new site myblog cd myblog/ 之后选择一个你喜欢的主题 Hugo 我这里的话选择了next主题 当然你也可以去themes.gohugo.io上查看
+        Hugo主题推荐 themes.gohugo.io  #git 下载地址并放到 themes下面 git clone https://github.com/xtfly/hugo-theme-next.git themes/next # 进入到content下 并创建一个新的md格式博客 cd content/ hugo new post/blog.</description>
     </item>
-    
+
   </channel>
 </rss>
